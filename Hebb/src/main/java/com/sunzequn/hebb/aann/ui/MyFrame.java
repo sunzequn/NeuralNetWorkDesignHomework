@@ -1,6 +1,6 @@
-package com.sunzequn.hebb.ui;
+package com.sunzequn.hebb.aann.ui;
 
-import com.sunzequn.hebb.listener.CalculateButtonListener;
+import com.sunzequn.hebb.aann.listener.CalculateButtonListener;
 
 import javax.swing.*;
 import java.awt.*;

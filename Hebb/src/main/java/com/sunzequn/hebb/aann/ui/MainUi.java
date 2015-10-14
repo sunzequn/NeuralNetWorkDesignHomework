@@ -1,4 +1,4 @@
-package com.sunzequn.hebb.ui;
+package com.sunzequn.hebb.aann.ui;
 
 import javax.swing.*;
 
