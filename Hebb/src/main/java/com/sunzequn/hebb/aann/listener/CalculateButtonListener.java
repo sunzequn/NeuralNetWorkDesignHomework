@@ -35,17 +35,16 @@ public class CalculateButtonListener implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        //自联想
-        if(selfRadioButton.isSelected()){
-            int[] p = leftGridPanel.getButtonColor();
-            Matrix matrix = DenseMatrix.Factory.importFromArray(p).transpose();
-            int[][] array = mCalculator.aann(matrix).toColumnVector(Calculation.Ret.NEW).toIntArray();
-            rightMyGridPanel.drawButtonColor(array[0]);
-        }
-        //异联想
-        else{
-            System.out.println("异联想");
-        }
-
+        int[] p = leftGridPanel.getButtonColor();
+        Matrix matrix = DenseMatrix.Factory.importFromArray(p).transpose();
+        int[][] array;
+        //普通
+        if(selfRadioButton.isSelected())
+            array = mCalculator.aann(matrix, 1).toColumnVector(Calculation.Ret.NEW).toIntArray();
+        //仿逆
+        else
+            array = mCalculator.aann(matrix, 2).toColumnVector(Calculation.Ret.NEW).toIntArray();
+        System.out.println(array[0].length);
+        rightMyGridPanel.drawButtonColor(array[0]);
     }
 }
