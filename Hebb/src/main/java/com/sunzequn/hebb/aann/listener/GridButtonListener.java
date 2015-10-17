@@ -18,7 +18,6 @@ public class GridButtonListener implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
 
-
         if(mButton.getBackground() == Color.black)
             mButton.setBackground(Color.white);
         else

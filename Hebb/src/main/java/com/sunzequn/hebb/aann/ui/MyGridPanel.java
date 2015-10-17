@@ -62,5 +62,4 @@ public class MyGridPanel extends JPanel {
         for(int i = 0; i < buttonNums; i++)
             mButton[i].setBackground(Color.white);
     }
-
 }

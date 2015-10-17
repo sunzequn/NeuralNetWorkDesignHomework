@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee04243e-4310-402a-a549-c8879fbcbc10" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/listener/ClearButtonListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hebb/target/classes/com/sunzequn/hebb/aann/listener/GridButtonListener.class" afterPath="$PROJECT_DIR$/Hebb/target/classes/com/sunzequn/hebb/aann/listener/GridButtonListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hebb/target/classes/com/sunzequn/hebb/aann/ui/MyFrame.class" afterPath="$PROJECT_DIR$/Hebb/target/classes/com/sunzequn/hebb/aann/ui/MyFrame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hebb/target/classes/com/sunzequn/hebb/aann/ui/MyGridPanel.class" afterPath="$PROJECT_DIR$/Hebb/target/classes/com/sunzequn/hebb/aann/ui/MyGridPanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/listener/GridButtonListener.java" afterPath="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/listener/GridButtonListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/ui/MyFrame.java" afterPath="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/ui/MyFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/ui/MyGridPanel.java" afterPath="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/ui/MyGridPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NeuralNetworkDesignHomework.iws" />
@@ -27,11 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MyFrame.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MyFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/ui/MyFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="56" column="38" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.8224299">
+              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,45 +45,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyGridPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/ui/MyGridPanel.java">
+      <file leaf-file-name="MainUi.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/ui/MainUi.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
+              <caret line="9" column="26" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state>
-              <first_editor vertical-scroll-proportion="0.16541353">
-                <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GridButtonListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/listener/GridButtonListener.java">
+      <file leaf-file-name="ClearButtonListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/listener/ClearButtonListener.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CalculateButtonListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/listener/CalculateButtonListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-              <folding />
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -140,11 +125,13 @@
         <option value="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/listener/CalculateButtonListener.java" />
         <option value="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/listener/CalculateButtonListener.java" />
         <option value="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aanncore/TrainingSamples.java" />
-        <option value="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/ui/MyFrame.java" />
         <option value="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/core/TrainingSamples.java" />
         <option value="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/core/Calculator.java" />
-        <option value="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/ui/MyGridPanel.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/ui/MyGridPanel.java" />
+        <option value="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/listener/GridButtonListener.java" />
+        <option value="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/listener/ClearButtonListener.java" />
+        <option value="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/ui/MyFrame.java" />
       </list>
     </option>
   </component>
@@ -365,6 +352,10 @@
               <option name="myItemId" value="aann" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -388,7 +379,7 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.Calculator.test">
+  <component name="RunManager" selected="Application.MainUi (1)">
     <configuration default="false" name="MainUi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -765,9 +756,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Calculator.test" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TrainingSamples.test" />
-        <item index="2" class="java.lang.String" itemvalue="Application.MainUi (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Application.MainUi (1)" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Calculator.test" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TrainingSamples.test" />
         <item index="3" class="java.lang.String" itemvalue="Application.MainUi" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.MainUi.test" />
       </list>
@@ -792,7 +783,7 @@
       <workItem from="1444708615124" duration="4562000" />
       <workItem from="1444803697417" duration="790000" />
       <workItem from="1444804508695" duration="2996000" />
-      <workItem from="1445048450484" duration="4169000" />
+      <workItem from="1445048450484" duration="6345000" />
     </task>
     <task id="LOCAL-00001" summary="界面初步">
       <created>1444713210869</created>
@@ -806,11 +797,17 @@
       <option name="project" value="LOCAL" />
       <updated>1445054318170</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="更新README">
+      <created>1445054420521</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1445054420521</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21570000" />
+    <option name="totallyTimeSpent" value="23746000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -824,8 +821,8 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28485757" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32866043" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2834891" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36370903" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -841,32 +838,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3268366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28485757" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36433512" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -882,7 +853,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="界面初步" />
     <MESSAGE value="自联想计算部分初步；添加清除按钮和监听" />
-    <option name="LAST_COMMIT_MESSAGE" value="自联想计算部分初步；添加清除按钮和监听" />
+    <MESSAGE value="更新README" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新README" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1147,14 +1119,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/ui/MainUi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34703195">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Hebb/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34684685">
@@ -1186,40 +1150,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/ui/MyFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="38" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/listener/GridButtonListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/listener/CalculateButtonListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/ui/MyGridPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1233,6 +1163,58 @@
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/listener/CalculateButtonListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/listener/GridButtonListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7719298">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/ui/MyGridPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44110274">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/listener/ClearButtonListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/ui/MainUi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/ui/MyFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8224299">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

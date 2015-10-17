@@ -1,6 +1,7 @@
 package com.sunzequn.hebb.aann.ui;
 
 import com.sunzequn.hebb.aann.listener.CalculateButtonListener;
+import com.sunzequn.hebb.aann.listener.ClearButtonListener;
 
 import javax.swing.*;
 import java.awt.*;
@@ -15,6 +16,8 @@ public class MyFrame extends JFrame {
     private JPanel leftPanel;
     private JPanel rightPanel;
     private JPanel midPanel;
+    private MyGridPanel rightGridPanel;
+    private MyGridPanel leftGridPanel;
 
     public MyFrame(String name) throws HeadlessException {
         super(name);
@@ -25,6 +28,8 @@ public class MyFrame extends JFrame {
         mContainer = getContentPane();
         mBoxLayout = new BoxLayout(mContainer, BoxLayout.X_AXIS);
         mContainer.setLayout(mBoxLayout);
+        leftGridPanel = new MyGridPanel();
+        rightGridPanel = new MyGridPanel();
 
         initLeftPanel();
         initMidPanel();
@@ -36,9 +41,8 @@ public class MyFrame extends JFrame {
 
         leftPanel = new JPanel();
         leftPanel.setLayout(new BoxLayout(leftPanel, BoxLayout.Y_AXIS));
-        MyGridPanel myGridPanel = new MyGridPanel();
-        myGridPanel.setPreferredSize(new Dimension(300, 400));
-        leftPanel.add(myGridPanel);
+        leftGridPanel.setPreferredSize(new Dimension(300, 400));
+        leftPanel.add(leftGridPanel);
 
         add(leftPanel);
 
@@ -61,7 +65,11 @@ public class MyFrame extends JFrame {
         calculateButton.addActionListener(new CalculateButtonListener(selfRadioButton, heteroRadioButton));
         midPanel.add(calculateButton);
 
+        //按钮之间添加间隙
+        midPanel.add(Box.createRigidArea(new Dimension(1, 20)));
+
         JButton clearButton = new JButton("清空操作");
+        clearButton.addActionListener(new ClearButtonListener(leftGridPanel, rightGridPanel));
         midPanel.add(clearButton);
 
         add(midPanel);
@@ -71,9 +79,8 @@ public class MyFrame extends JFrame {
 
         rightPanel = new JPanel();
         rightPanel.setLayout(new BoxLayout(rightPanel, BoxLayout.Y_AXIS));
-        MyGridPanel myGridPanel = new MyGridPanel();
-        myGridPanel.setPreferredSize(new Dimension(300, 400));
-        rightPanel.add(myGridPanel);
+        rightGridPanel.setPreferredSize(new Dimension(300, 400));
+        rightPanel.add(rightGridPanel);
         add(rightPanel);
     }
 }
