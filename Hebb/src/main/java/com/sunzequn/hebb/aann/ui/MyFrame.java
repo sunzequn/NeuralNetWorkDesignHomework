@@ -62,7 +62,7 @@ public class MyFrame extends JFrame {
         midPanel.add(heteroRadioButton);
 
         JButton calculateButton = new JButton("开始识别");
-        calculateButton.addActionListener(new CalculateButtonListener(selfRadioButton, heteroRadioButton));
+        calculateButton.addActionListener(new CalculateButtonListener(selfRadioButton, heteroRadioButton, leftGridPanel, rightGridPanel));
         midPanel.add(calculateButton);
 
         //按钮之间添加间隙
