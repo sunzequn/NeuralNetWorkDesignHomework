@@ -38,14 +38,12 @@ public class MyGridPanel extends JPanel {
     }
 
     public void drawButtonColor(int color[]){
-
         for(int i = 0; i < buttonNums; i++){
-            JButton button = new JButton();
+            JButton button = mButton[i];
             if(color[i] == -1)
                 button.setBackground(Color.white);
             else
                 button.setBackground(Color.black);
-            add(button);
         }
     }
 
@@ -58,6 +56,11 @@ public class MyGridPanel extends JPanel {
                 color[i] = -1;
         }
         return color;
+    }
+
+    public void clearButtonColor(){
+        for(int i = 0; i < buttonNums; i++)
+            mButton[i].setBackground(Color.white);
     }
 
 }

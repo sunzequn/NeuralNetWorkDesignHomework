@@ -61,6 +61,9 @@ public class MyFrame extends JFrame {
         calculateButton.addActionListener(new CalculateButtonListener(selfRadioButton, heteroRadioButton));
         midPanel.add(calculateButton);
 
+        JButton clearButton = new JButton("清空操作");
+        midPanel.add(clearButton);
+
         add(midPanel);
     }
 
