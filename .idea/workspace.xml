@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee04243e-4310-402a-a549-c8879fbcbc10" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hebb/target/classes/com/sunzequn/hebb/aann/core/Calculator.class" afterPath="$PROJECT_DIR$/Hebb/target/classes/com/sunzequn/hebb/aann/core/Calculator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hebb/target/classes/com/sunzequn/hebb/aann/ui/MyFrame.class" afterPath="$PROJECT_DIR$/Hebb/target/classes/com/sunzequn/hebb/aann/ui/MyFrame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hebb/target/classes/com/sunzequn/hebb/aann/core/TrainingSamples.class" afterPath="$PROJECT_DIR$/Hebb/target/classes/com/sunzequn/hebb/aann/core/TrainingSamples.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/core/Calculator.java" afterPath="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/core/Calculator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/ui/MyFrame.java" afterPath="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/ui/MyFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/ui/MyGridPanel.java" afterPath="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/ui/MyGridPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/core/TrainingSamples.java" afterPath="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/core/TrainingSamples.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NeuralNetworkDesignHomework.iws" />
@@ -45,12 +39,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyGridPanel.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyGridPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/ui/MyGridPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24262296">
+            <state vertical-scroll-proportion="0.0">
               <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state>
+              <first_editor vertical-scroll-proportion="0.16541353">
+                <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -122,7 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/ui/com/sunzequn/hebb/ui/listerner/GridButtonListener.java" />
         <option value="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/ui/MyGridPanel.java" />
         <option value="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/ui/com/sunzequn/hebb/listerner/GridButtonListener.java" />
@@ -138,6 +144,7 @@
         <option value="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/core/TrainingSamples.java" />
         <option value="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/core/Calculator.java" />
         <option value="$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/ui/MyGridPanel.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -785,7 +792,7 @@
       <workItem from="1444708615124" duration="4562000" />
       <workItem from="1444803697417" duration="790000" />
       <workItem from="1444804508695" duration="2996000" />
-      <workItem from="1445048450484" duration="4053000" />
+      <workItem from="1445048450484" duration="4169000" />
     </task>
     <task id="LOCAL-00001" summary="界面初步">
       <created>1444713210869</created>
@@ -793,11 +800,17 @@
       <option name="project" value="LOCAL" />
       <updated>1444713210869</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="自联想计算部分初步；添加清除按钮和监听">
+      <created>1445054318170</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1445054318170</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21454000" />
+    <option name="totallyTimeSpent" value="21570000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -810,11 +823,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28485757" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32866043" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36370903" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36370903" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -868,7 +881,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="界面初步" />
-    <option name="LAST_COMMIT_MESSAGE" value="界面初步" />
+    <MESSAGE value="自联想计算部分初步；添加清除按钮和监听" />
+    <option name="LAST_COMMIT_MESSAGE" value="自联想计算部分初步；添加清除按钮和监听" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1077,21 +1091,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state>
-          <first_editor vertical-scroll-proportion="0.0">
-            <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/javax/swing/JPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.3350718">
@@ -1215,9 +1214,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Hebb/src/main/java/com/sunzequn/hebb/aann/ui/MyGridPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24262296">
+        <state vertical-scroll-proportion="0.0">
           <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state>
+          <first_editor vertical-scroll-proportion="0.16541353">
+            <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
