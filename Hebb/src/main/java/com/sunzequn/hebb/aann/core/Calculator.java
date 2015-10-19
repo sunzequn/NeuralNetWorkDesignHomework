@@ -22,7 +22,7 @@ public class Calculator {
     }
 
     public void learnW(){
-        Matrix P = mTrainingSamples.getP();
+        Matrix P = mTrainingSamples.getSamples(1);
         for(int i = 0; i < samplesNum; i++){
             Matrix p = P.selectColumns(Calculation.Ret.NEW, i);
             W1 = W1.plus(p.mtimes(p.transpose()));
@@ -30,13 +30,14 @@ public class Calculator {
     }
 
     public void learnWByPseudoInverse(){
-        Matrix P = mTrainingSamples.getP();
-        W2 = P.mtimes(P.pinv());
+        Matrix P = mTrainingSamples.getSamples(2);
+        Matrix t = mTrainingSamples.getTargets();
+        W2 = t.mtimes(P.pinv());
     }
 
-    public Matrix aann(Matrix p, int method){
+    public Matrix hebb(Matrix p, int type){
         Matrix a;
-        if(method == 1)
+        if(type == 1)
             a = W1.mtimes(p);
         else
             a = W2.mtimes(p);

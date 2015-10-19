@@ -38,13 +38,12 @@ public class CalculateButtonListener implements ActionListener {
         int[] p = leftGridPanel.getButtonColor();
         Matrix matrix = DenseMatrix.Factory.importFromArray(p).transpose();
         int[][] array;
-        //普通
+        //自联想
         if(selfRadioButton.isSelected())
-            array = mCalculator.aann(matrix, 1).toColumnVector(Calculation.Ret.NEW).toIntArray();
-        //仿逆
+            array = mCalculator.hebb(matrix, 1).toColumnVector(Calculation.Ret.NEW).toIntArray();
+        //异联想
         else
-            array = mCalculator.aann(matrix, 2).toColumnVector(Calculation.Ret.NEW).toIntArray();
-        System.out.println(array[0].length);
+            array = mCalculator.hebb(matrix, 2).toColumnVector(Calculation.Ret.NEW).toIntArray();
         rightMyGridPanel.drawButtonColor(array[0]);
     }
 }

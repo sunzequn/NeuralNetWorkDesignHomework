@@ -52,9 +52,9 @@ public class MyFrame extends JFrame {
         midPanel = new JPanel();
         midPanel.setLayout(new BoxLayout(midPanel, BoxLayout.Y_AXIS));
 
-        JRadioButton selfRadioButton = new JRadioButton("普通");
+        JRadioButton selfRadioButton = new JRadioButton("自联想");
         selfRadioButton.setSelected(true);
-        JRadioButton heteroRadioButton = new JRadioButton("仿逆");
+        JRadioButton heteroRadioButton = new JRadioButton("异联想");
         ButtonGroup buttonGroup = new ButtonGroup();
         buttonGroup.add(selfRadioButton);
         buttonGroup.add(heteroRadioButton);
