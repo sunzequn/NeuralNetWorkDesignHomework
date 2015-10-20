@@ -1,7 +1,7 @@
-package com.sunzequn.hebb.aann.listener;
+package com.sunzequn.hebb.listener;
 
-import com.sunzequn.hebb.aann.core.Calculator;
-import com.sunzequn.hebb.aann.ui.MyGridPanel;
+import com.sunzequn.hebb.core.Calculator;
+import com.sunzequn.hebb.ui.MyGridPanel;
 import org.ujmp.core.DenseMatrix;
 import org.ujmp.core.Matrix;
 import org.ujmp.core.calculation.Calculation;

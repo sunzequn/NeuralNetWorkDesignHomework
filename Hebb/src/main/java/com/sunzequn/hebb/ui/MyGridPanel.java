@@ -1,6 +1,6 @@
-package com.sunzequn.hebb.aann.ui;
+package com.sunzequn.hebb.ui;
 
-import com.sunzequn.hebb.aann.listener.GridButtonListener;
+import com.sunzequn.hebb.listener.GridButtonListener;
 
 import javax.swing.*;
 import java.awt.*;

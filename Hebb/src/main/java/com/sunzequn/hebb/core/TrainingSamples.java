@@ -1,4 +1,4 @@
-package com.sunzequn.hebb.aann.core;
+package com.sunzequn.hebb.core;
 
 import org.junit.Test;
 import org.ujmp.core.DenseMatrix;

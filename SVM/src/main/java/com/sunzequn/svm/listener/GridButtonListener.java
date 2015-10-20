@@ -1,4 +1,4 @@
-package com.sunzequn.hebb.aann.listener;
+package com.sunzequn.svm.listener;
 
 import javax.swing.*;
 import java.awt.*;
@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * Created by sloriac on 15-10-12.
+ * Created by sloriac on 15-10-20.
  */
 public class GridButtonListener implements ActionListener {
 

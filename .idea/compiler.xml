@@ -26,9 +26,9 @@
         <module name="SVM" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="Hebb" target="1.8" />
-      <module name="SVM" target="1.5" />
+      <module name="SVM" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

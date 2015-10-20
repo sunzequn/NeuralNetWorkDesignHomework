@@ -1,29 +1,26 @@
-package com.sunzequn.hebb.aann.listener;
+package com.sunzequn.svm.listener;
 
-import com.sunzequn.hebb.aann.ui.MyGridPanel;
+import com.sunzequn.svm.ui.MyGridPanel;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * Created by sloriac on 15-10-17.
+ * Created by sloriac on 15-10-20.
  */
 public class ClearButtonListener implements ActionListener{
 
     private MyGridPanel leftGridPanel;
-    private MyGridPanel rightMyGridPanel;
 
     public ClearButtonListener() {
     }
 
-    public ClearButtonListener(MyGridPanel leftGridPanel, MyGridPanel rightMyGridPanel) {
+    public ClearButtonListener(MyGridPanel leftGridPanel) {
         this.leftGridPanel = leftGridPanel;
-        this.rightMyGridPanel = rightMyGridPanel;
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
         leftGridPanel.clearButtonColor();
-        rightMyGridPanel.clearButtonColor();
     }
 }
