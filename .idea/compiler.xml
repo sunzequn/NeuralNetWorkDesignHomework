@@ -23,10 +23,12 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="Hebb" />
+        <module name="SVM" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Hebb" target="1.8" />
+      <module name="SVM" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
