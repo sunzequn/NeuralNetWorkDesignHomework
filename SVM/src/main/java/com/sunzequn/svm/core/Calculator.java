@@ -16,7 +16,6 @@ public class Calculator {
     private String testText = "SVM/src/main/resources/test.txt";
     private String outText = "SVM/src/main/resources/out.txt";
 
-
     public Calculator() {
     }
 
