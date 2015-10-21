@@ -10,26 +10,27 @@ import java.io.IOException;
 
 public class Calculator {
 
-    private TrainingSamples mTrainingSamples = new TrainingSamples();
-    private String modelText = "src/main/resources/model.txt";
-    private String samplesText = "src/main/resources/samples.txt";
-    private String testText = "src/main/resources/test.txt";
-    private String outText = "src/main/resources/out.txt";
+    private DataHandler mDataHandler = new DataHandler();
+    private String modelText = "SVM/src/main/resources/model.txt";
+    private String samplesText = "SVM/src/main/resources/samples.txt";
+    private String testText = "SVM/src/main/resources/test.txt";
+    private String outText = "SVM/src/main/resources/out.txt";
 
 
     public Calculator() {
     }
 
-    public void svm() throws IOException {
-        mTrainingSamples.handleSamples2();
+    public void init() throws IOException {
+        mDataHandler.handleSamples(samplesText, mDataHandler.getNumberSamples());
         String[] train = {samplesText, modelText};
         svm_train t = new svm_train();
         t.main(train);
+    }
 
+    public int svm() throws IOException {
         String[] test = {testText, modelText, outText};
         svm_predict p = new svm_predict();
-        System.out.println(p.getRes(test));
-
+        return p.getRes(test);
     }
 
     @Test
