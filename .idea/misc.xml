@@ -46,6 +46,7 @@
       <list>
         <option value="$PROJECT_DIR$/Hebb/pom.xml" />
         <option value="$PROJECT_DIR$/SVM/pom.xml" />
+        <option value="$PROJECT_DIR$/BP/pom.xml" />
       </list>
     </option>
   </component>

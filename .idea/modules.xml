@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/BP/BP.iml" filepath="$PROJECT_DIR$/BP/BP.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hebb/Hebb.iml" filepath="$PROJECT_DIR$/Hebb/Hebb.iml" />
       <module fileurl="file://$PROJECT_DIR$/NeuralNetworkDesignHomework.iml" filepath="$PROJECT_DIR$/NeuralNetworkDesignHomework.iml" />
       <module fileurl="file://$PROJECT_DIR$/SVM/SVM.iml" filepath="$PROJECT_DIR$/SVM/SVM.iml" />

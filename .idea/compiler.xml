@@ -22,11 +22,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="BP" />
         <module name="Hebb" />
         <module name="SVM" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
+      <module name="BP" target="1.5" />
       <module name="Hebb" target="1.8" />
       <module name="SVM" target="1.8" />
     </bytecodeTargetLevel>
