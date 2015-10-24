@@ -47,23 +47,12 @@ public class BPUtil {
         return matrix;
     }
 
-    @Test
-    public void test() {
-
-        Matrix m = DenseMatrix.Factory.zeros(2, 1);
-        m.setAsDouble(0.321, 0, 0);
-        m.setAsDouble(0.368, 1, 0);
-        System.out.println(m);
-
-        Matrix w = DenseMatrix.Factory.zeros(1, 2);
-        w.setAsDouble(0.09, 0, 0);
-        w.setAsDouble(-0.17, 0, 1);
-        System.out.println(w);
-
-        Matrix s = DenseMatrix.Factory.zeros(1, 1);
-        s.setAsDouble(-2.522, 0, 0);
-        System.out.println(s);
-        System.out.println(f1n(m, w, s));
-
+    public void out(Matrix matrix, double precision) {
+        double res = matrix.getAsDouble(0, 0);
+        if (Math.abs(res - 1) <= precision)
+            System.out.println(1);
+        else
+            System.out.println(0);
     }
+
 }

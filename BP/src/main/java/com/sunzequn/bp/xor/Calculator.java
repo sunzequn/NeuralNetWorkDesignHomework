@@ -1,7 +1,6 @@
 package com.sunzequn.bp.xor;
 
 import org.junit.Test;
-import org.ujmp.core.DenseMatrix;
 import org.ujmp.core.Matrix;
 
 /**
@@ -13,7 +12,8 @@ public class Calculator {
     private BPUtil mBpUtil = new BPUtil();
 
     public void hideLayer(int i) {
-        mVar.getSample(i);
+        if (i != -1)
+            mVar.getSample(i);
         mVar.hideOutput = mBpUtil.logsig(mVar.hideW.mtimes(mVar.input).plus(mVar.hideB));
     }
 
@@ -30,31 +30,20 @@ public class Calculator {
         Matrix s2 = mBpUtil.f2n(mVar.error);
         Matrix s1 = mBpUtil.f1n(mVar.hideOutput, mVar.outW, s2);
 
-//        System.out.println(mVar.hideB);
         mVar.hideB = mVar.hideB.minus(s1.times(mVar.learnSpeed));
-//        System.out.println(mVar.hideB);
-
-//        System.out.println(mVar.hideW);
         mVar.hideW = mVar.hideW.minus(s1.times(mVar.learnSpeed).mtimes(mVar.input.transpose()));
-//        System.out.println(mVar.hideW);
 
-//        System.out.println(mVar.outB);
         mVar.outB = mVar.outB.minus(s2.times(mVar.learnSpeed));
-//        System.out.println(mVar.outB);
-
-//        System.out.println(mVar.outW);
         mVar.outW = mVar.outW.minus(s2.times(mVar.learnSpeed).mtimes(mVar.hideOutput.transpose()));
-//        System.out.println(mVar.outW);
     }
 
-    @Test
-    public void test() {
-
+    public boolean train() {
+        //控制迭代次数
         for (int i = 0; i < mVar.MaxTrainingNum; i++) {
             mVar.allError = 0;
             for (int j = 0; j < 4; j++) {
-                outLayer(j);
-                error();
+                outLayer(j);//迭代一次，得到输出
+                error();//计算误差
                 reverse();
                 mVar.allError += Math.abs(mVar.error.getAsDouble(0, 0));
             }
@@ -62,19 +51,23 @@ public class Calculator {
             System.out.print("误差:");
             System.out.println(mVar.allError);
 
-
             if (mVar.allError < mVar.precision) {
-                System.out.println("success");
-                for (int k = 4; k < 8; k++) {
-                    outLayer(k);
-                    System.out.println(mVar.output);
-                }
-                return;
+                System.out.println("训练完成！共迭代了" + (i + 1) + "次。");
+                return true;
             }
 
-
+            if (i == mVar.MaxTrainingNum - 1)
+                System.out.println("训练失败，请调整相关参数");
         }
+        return false;
+    }
 
+    public void test(int a, int b) {
+        mVar.input.setAsDouble(a, 0, 0);
+        mVar.input.setAsDouble(b, 1, 0);
+        outLayer(-1);
+        System.out.print(a + "亦或" + b + "等于：");
+        mBpUtil.out(mVar.output, mVar.precision);
     }
 
 }
