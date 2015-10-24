@@ -12,6 +12,12 @@ import java.util.List;
  */
 public class IOUtil {
 
+    /**
+     * 一行一行写入文本
+     *
+     * @param fileName 文本路径
+     * @param data     数据
+     */
     public void writeData(String fileName, List<String> data){
         try {
             BufferedWriter bw = new BufferedWriter(new FileWriter(fileName));
@@ -26,6 +32,11 @@ public class IOUtil {
         }
     }
 
+    /**
+     * 写入一行数据
+     * @param fileName 文本路径
+     * @param data 数据
+     */
     public void writeData(String fileName, String data) {
         try {
             BufferedWriter bw = new BufferedWriter(new FileWriter(fileName));
