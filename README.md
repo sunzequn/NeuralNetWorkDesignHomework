@@ -2,3 +2,4 @@
 > * 语言：Java，JDK版本1.8
 > * IDE：Intellij IDEA
 > * 矩阵计算包：UJMP
+> * 支持向量机：libsvm
