@@ -29,17 +29,26 @@ public class Var {
     Matrix targetOutput = DenseMatrix.Factory.zeros(outNeuronNum, 1);//预期输出
     Matrix error = DenseMatrix.Factory.zeros(outNeuronNum, 1);//误差
 
-    private int[][] samplesInput = {{0, 0}, {0, 1}, {1, 0}, {1, 1}, {0, 0}, {0, 1}, {1, 0}, {1, 1}};
-    private int[] samplesOutput = {0, 1, 1, 0, 0, 1, 1, 0};
+    //训练样本的输入
+    private int[][] samplesInput = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};
+    //训练样本的期望输出
+    private int[] samplesOutput = {0, 1, 1, 0};
 
-
-    //获得第i个测试样例，i从0开始
+    /**
+     * 获得第i个测试样例，i从0开始
+     *
+     * @param i 样本编号
+     */
     public void getSample(int i) {
         input.setAsDouble(samplesInput[i][0], 0, 0);
         input.setAsDouble(samplesInput[i][1], 1, 0);
         targetOutput.setAsDouble(samplesOutput[i], 0, 0);
     }
 
+    /**
+     * 获取较小的随机值
+     * @return 随机值
+     */
     public double randMin() {
         return Math.random() * 0.5;
     }

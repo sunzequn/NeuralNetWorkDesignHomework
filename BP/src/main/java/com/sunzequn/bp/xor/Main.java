@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 /**
  * Created by sloriac on 15-10-24.
+ * 项目入口，直接运行main函数
  */
 public class Main {
 
