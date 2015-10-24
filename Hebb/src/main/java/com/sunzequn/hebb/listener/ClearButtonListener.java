@@ -11,19 +11,19 @@ import java.awt.event.ActionListener;
 public class ClearButtonListener implements ActionListener{
 
     private MyGridPanel leftGridPanel;
-    private MyGridPanel rightMyGridPanel;
+    private MyGridPanel rightGridPanel;
 
     public ClearButtonListener() {
     }
 
-    public ClearButtonListener(MyGridPanel leftGridPanel, MyGridPanel rightMyGridPanel) {
+    public ClearButtonListener(MyGridPanel leftGridPanel, MyGridPanel rightGridPanel) {
         this.leftGridPanel = leftGridPanel;
-        this.rightMyGridPanel = rightMyGridPanel;
+        this.rightGridPanel = rightGridPanel;
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
         leftGridPanel.clearButtonColor();
-        rightMyGridPanel.clearButtonColor();
+        rightGridPanel.clearButtonColor();
     }
 }

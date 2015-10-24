@@ -10,17 +10,20 @@ import org.ujmp.core.calculation.Calculation;
  */
 public class Calculator {
 
-    private static int dimension = 30;
-    private static int samplesNum = 3;
-    private Matrix W1 = DenseMatrix.Factory.zeros(dimension, dimension);
-    private Matrix W2 = DenseMatrix.Factory.zeros(dimension, dimension);
-    private TrainingSamples mTrainingSamples = new TrainingSamples();
+    private static int dimension = 30;//输入向量维数
+    private static int samplesNum = 3;//自联想训练样本数
+    private Matrix W1 = DenseMatrix.Factory.zeros(dimension, dimension);//自联想权值矩阵
+    private Matrix W2 = DenseMatrix.Factory.zeros(dimension, dimension);//异联想权值矩阵
+    private TrainingSamples mTrainingSamples = new TrainingSamples();//训练样本矩阵
 
     public Calculator() {
         learnW();
         learnWByPseudoInverse();
     }
 
+    /**
+     * 自联想权值矩阵学习
+     */
     public void learnW(){
         Matrix P = mTrainingSamples.getSamples(1);
         for(int i = 0; i < samplesNum; i++){
@@ -29,12 +32,23 @@ public class Calculator {
         }
     }
 
+    /**
+     * 异联想权值矩阵学习
+     * 使用仿逆规则
+     */
     public void learnWByPseudoInverse(){
         Matrix P = mTrainingSamples.getSamples(2);
         Matrix t = mTrainingSamples.getTargets();
         W2 = t.mtimes(P.pinv());
     }
 
+    /**
+     * 用hebb规则计算输出　a = wp
+     *
+     * @param p    输入向量
+     * @param type 类型：1表示自联想；2表示异联想
+     * @return 返回输出向量
+     */
     public Matrix hebb(Matrix p, int type){
         Matrix a;
         if(type == 1)
@@ -45,6 +59,11 @@ public class Calculator {
         return a;
     }
 
+
+    /**
+     * 对称硬极限函数
+     * @param a　小于0返回-1；大于0返回1
+     */
     public void hardlims(Matrix a){
         long row = a.getRowCount();
         long col = a.getColumnCount();
@@ -58,17 +77,4 @@ public class Calculator {
 
     }
 
-    public void printW(){
-        System.out.println("权值矩阵W为：");
-        System.out.println(W1);
-    }
-
-    @Test
-    public void test(){
-        learnW();
-        learnWByPseudoInverse();
-        System.out.println(W1);
-        System.out.println("-----------------------");
-        System.out.println(W2);
-    }
 }

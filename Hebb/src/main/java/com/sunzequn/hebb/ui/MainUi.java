@@ -4,6 +4,7 @@ import javax.swing.*;
 
 /**
  * Created by sloriac on 15-10-12.
+ * 工程的入口程序，运行main函数即可
  */
 public class MainUi {
 

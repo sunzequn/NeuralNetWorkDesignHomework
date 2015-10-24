@@ -38,12 +38,10 @@ public class MyFrame extends JFrame {
     }
 
     private void initLeftPanel() {
-
         leftPanel = new JPanel();
         leftPanel.setLayout(new BoxLayout(leftPanel, BoxLayout.Y_AXIS));
         leftGridPanel.setPreferredSize(new Dimension(300, 400));
         leftPanel.add(leftGridPanel);
-
         add(leftPanel);
 
     }
@@ -76,7 +74,6 @@ public class MyFrame extends JFrame {
     }
 
     private void initRightPanel() {
-
         rightPanel = new JPanel();
         rightPanel.setLayout(new BoxLayout(rightPanel, BoxLayout.Y_AXIS));
         rightGridPanel.setPreferredSize(new Dimension(300, 400));

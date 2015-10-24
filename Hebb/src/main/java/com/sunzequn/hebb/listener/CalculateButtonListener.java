@@ -15,9 +15,9 @@ import java.awt.event.ActionListener;
  */
 public class CalculateButtonListener implements ActionListener {
 
-    private static int dimension = 30;
-    private JRadioButton selfRadioButton;
-    private JRadioButton heteroRadioButton;
+    private static int dimension = 30;//点维数
+    private JRadioButton selfRadioButton;//自联想按钮
+    private JRadioButton heteroRadioButton;//异联想按钮
     private MyGridPanel leftGridPanel;
     private MyGridPanel rightMyGridPanel;
     private Calculator mCalculator;

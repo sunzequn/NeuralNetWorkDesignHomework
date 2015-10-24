@@ -10,12 +10,14 @@ import org.ujmp.core.calculation.Calculation;
  */
 public class TrainingSamples {
 
-    private static int dimension = 30;
+    private static int dimension = 30;//输入向量维数
+    //自联想训练样本
     private int[][] aannSamples = {
             {-1, 1, 1, 1, -1, 1, -1, -1, -1, 1, 1, -1, -1, -1, 1, 1, -1, -1, -1, 1, 1, -1, -1, -1, 1, -1, 1, 1, 1, -1},
             {-1, 1, 1, -1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1},
             {1, 1, 1, -1, -1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, 1, 1, 1}
     };
+    //异联想训练输入样本
     private int[][] hannSamples = {
             {-1, 1, 1, 1, -1, 1, -1, -1, -1, 1, 1, -1, -1, -1, 1, 1, -1, -1, -1, 1, 1, -1, -1, -1, 1, -1, 1, 1, 1, -1},
             {-1, 1, 1, -1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1},
@@ -28,6 +30,7 @@ public class TrainingSamples {
             {-1, 1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, -1, 1, 1, -1, -1, -1, 1, -1, 1, 1, 1, -1},
             {-1, 1, 1, 1, -1, 1, -1, -1, -1, 1, 1, 1, 1, 1, 1, -1, -1, -1, -1, 1, -1, -1, -1, -1, 1, 1, 1, 1, 1, -1}
     };
+    //异联想训练目标输出
     private int[][] hannTargets = {
             {-1, -1, 1, -1, -1, -1, 1, -1, 1, -1, 1, -1, -1, -1, 1, 1, 1, 1, 1, 1, 1, -1, -1, -1, 1, 1, -1, -1, -1, 1},
             {1, 1, 1, 1, -1, 1, -1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, -1, 1, 1, -1, -1, -1, 1, 1, 1, 1, 1, -1},
@@ -47,9 +50,15 @@ public class TrainingSamples {
     }
 
     /**
+     *
+     *
+     * @return　
+     */
+    /**
      * 得到训练样本
      *
-     * @return　自联想：30*3的矩阵；异联想：30*10的矩阵
+     * @param type 1表示自联想;2表示异联想
+     * @return 自联想：30*3的矩阵；异联想：30*10的矩阵
      */
     public Matrix getSamples(int type) {
         Matrix p;
@@ -63,16 +72,16 @@ public class TrainingSamples {
         return p.transpose();
     }
 
+    /**
+     * 得到异联想训练的目标输出
+     * @return 目标输出矩阵
+     */
     public Matrix getTargets() {
         Matrix t;
         t = DenseMatrix.Factory.zeros(10, dimension);
         t = DenseMatrix.Factory.importFromArray(hannTargets);
         return t.transpose();
 
-    }
-
-    @Test
-    public void test() {
     }
 
 }
