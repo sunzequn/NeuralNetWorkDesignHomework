@@ -72,7 +72,7 @@ public class Calculator {
             System.out.println(mVar.allError);
             //训练成功
             if (mVar.allError < mVar.precision) {
-                System.out.println("训练完成！共迭代了" + (i + 1) + "次。");
+                System.out.println("训练完成！共迭代了" + (i + 1) * 4 + "次。");
                 return true;
             }
             //训练失败
@@ -91,7 +91,7 @@ public class Calculator {
         mVar.input.setAsDouble(a, 0, 0);
         mVar.input.setAsDouble(b, 1, 0);
         outLayer(-1);
-        System.out.print(a + "亦或" + b + "等于：");
+        System.out.print(a + " 异或 " + b + " 等于：");
         mBpUtil.out(mVar.output, mVar.precision);
     }
 
